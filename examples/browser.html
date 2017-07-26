@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="../src/sqlaas-browser"></script>
+  </head>
+  <body>
+    <script>
+      const {sqlConnect, sqlExecute} = window.Sqlaas
+
+      sqlConnect({apiKey: "example", databaseURL: "https://sqlaas.io/example"})
+      .then(sqlExecute("select * from employees limit 1;"))
+      .then(queryResults => console.log("query results", queryResults))
+      .catch(console.error)
+      // expect 3 rows with columns id title name salary start_date
+    </script>
+  </body>
+</html>
