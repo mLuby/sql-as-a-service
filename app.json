@@ -1,0 +1,13 @@
+{
+  "name": "SQL as a service",
+  "description": "A postgres SQL db and web server so you can be practically serverless",
+  "repository": "https://github.com/mluby/sql-as-a-service",
+  "logo": "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.faceofit.com%2Fwp-content%2Fuploads%2F2016%2F04%2FlogoAzureSql.png&f=1",
+  "keywords": ["node", "sql", "postgres"],
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "9.5"
+    }
+  }]
+}

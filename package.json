@@ -4,7 +4,7 @@
   "description": "sql-as-a-service: Firebase for SQL",
   "main": "src/server.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon src/server.js",
+    "start": "node src/server.js",
     "test": "node examples/node.js"
   },
   "repository": {
@@ -19,16 +19,10 @@
   },
   "homepage": "https://github.com/mLuby/sql-as-a-service#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "btoa": "^1.1.2",
     "cors": "^2.8.4",
     "express": "^4.15.3",
-    "hat": "0.0.3",
     "isomorphic-fetch": "^2.2.1",
     "nodemon": "^1.11.0",
-    "passport": "^0.3.2",
-    "passport-http": "^0.3.0",
-    "pg": "^7.0.2",
-    "pg-format": "^1.0.4"
+    "pg": "^7.0.2"
   }
 }
