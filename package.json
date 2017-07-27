@@ -1,8 +1,8 @@
 {
   "name": "sqlaas",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "sql-as-a-service: Firebase for SQL",
-  "main": "src/server.js",
+  "main": "src/client.js",
   "scripts": {
     "start": "node src/server.js",
     "test": "node examples/node.js"
