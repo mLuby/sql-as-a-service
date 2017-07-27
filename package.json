@@ -1,10 +1,11 @@
 {
-  "name": "sql-as-a-service",
+  "name": "sqlaas",
   "version": "0.0.1",
-  "description": "Firebase for SQL",
-  "main": "src/main.js",
+  "description": "sql-as-a-service: Firebase for SQL",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/nodemon src/server.js",
+    "test": "node examples/node.js"
   },
   "repository": {
     "type": "git",
@@ -12,12 +13,22 @@
   },
   "keywords": [],
   "author": "mLuby (https://github.com/mLuby)",
-  "license": "all rights reserved",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mLuby/sql-as-a-service/issues"
   },
   "homepage": "https://github.com/mLuby/sql-as-a-service#readme",
   "dependencies": {
-    "pg": "^7.0.2"
+    "body-parser": "^1.17.2",
+    "btoa": "^1.1.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "hat": "0.0.3",
+    "isomorphic-fetch": "^2.2.1",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "pg": "^7.0.2",
+    "pg-format": "^1.0.4"
   }
 }

@@ -1,6 +1,6 @@
 -- pg_ctl -s -D /usr/local/var/postgres start
--- createdb sqlaas-example
--- psql -qd sqlaas-example -a -f src/example_schema.sql
+-- createdb sqlaas_example
+-- psql -qd sqlaas_example -a -f src/example_schema.sql
 CREATE TABLE employees (
    id SERIAL UNIQUE NOT NULL PRIMARY KEY
   ,title TEXT NOT NULL
